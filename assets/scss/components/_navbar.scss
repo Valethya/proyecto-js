@@ -34,6 +34,11 @@ nav {
   .nav-wrapper {
     position: relative;
     height: 100%;
+    ul{
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;//valentina
+    }
   }
 
   @media #{$large-and-up} {
@@ -63,6 +68,7 @@ nav {
     display: inline-block;
     font-size: $navbar-brand-font-size;
     padding: 0;
+    margin-left:1em;
 
     &.center {
       left: 50%;
@@ -121,7 +127,7 @@ nav {
       }
     }
     a {
-      transition: background-color .3s;
+      transition: background-color 1.5s;
       font-size: $navbar-font-size;
       color: $navbar-font-color;
       display: block;
@@ -141,6 +147,7 @@ nav {
 
       &:hover {
         background-color: rgba(0,0,0,.1);
+        transition: 1.5s;
       }
     }
 
@@ -201,6 +208,8 @@ nav {
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
     height: $navbar-height;
     line-height: $navbar-line-height;
+    position: sticky;
+    top: 0;//valentina
   }
   .navbar-fixed {
     height: $navbar-height;
