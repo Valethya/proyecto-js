@@ -2,15 +2,18 @@
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+  margin-top: 3vh;
 }
 @media #{$medium-and-up} {
   .container {
     width: 85%;
+    margin-top: 6vh;
   }
 }
 @media #{$large-and-up} {
   .container {
     width: 70%;
+    margin-top: 8vh;
   }
 }
 .col .row {

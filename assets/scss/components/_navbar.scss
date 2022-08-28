@@ -121,13 +121,15 @@ nav {
       transition: background-color .3s;
       float: left;
       padding: 0;
+      width: 25%;
+      text-align: center;
 
       &.active {
         background-color: rgba(0,0,0,.1);
       }
     }
     a {
-      transition: background-color 1.5s;
+      transition: background-color 3s;
       font-size: $navbar-font-size;
       color: $navbar-font-color;
       display: block;
@@ -146,8 +148,8 @@ nav {
       }
 
       &:hover {
-        background-color: rgba(0,0,0,.1);
-        transition: 1.5s;
+        background-color: $secondary-color-dark;
+        transition: 3s;
       }
     }
 
@@ -210,6 +212,7 @@ nav {
     line-height: $navbar-line-height;
     position: sticky;
     top: 0;//valentina
+    z-index: 1000;
   }
   .navbar-fixed {
     height: $navbar-height;

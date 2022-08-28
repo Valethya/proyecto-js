@@ -1,4 +1,35 @@
 .content_header{
     height: 20vh;
-    background-color: $primary-color;
+    background-image: url(/assets/img/citrics.jpg);
+    background-size: cover;
+}
+.img-mirror{
+    transform: scaleX(-1);
+}
+img{
+    object-fit: cover;
+    object-position: center;
+} 
+
+
+
+.main{
+    background-color: white;
+    margin-top: 3vh;
+}
+
+body{
+    background: $secondary-color-light;
+}
+
+.btn-card{
+    position: absolute;
+    right: 24px;
+    bottom: -20px; 
+}
+.info{
+    margin-top: 2em;
+}
+svg{
+    fill: $primary-color;
 }
