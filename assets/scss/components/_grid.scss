@@ -39,9 +39,9 @@
 
 // Mixins to eliminate code repitition
 @mixin reset-offset {
-  margin-left: auto;
-  left: auto;
-  right: auto;
+  // margin-left: auto;
+  // left: auto;      /// comentado para centrar con flex
+  // right: auto;
 }
 @mixin grid-classes($size, $i, $perc) {
   &.offset-#{$size}#{$i} {
@@ -57,8 +57,8 @@
 
 
 .row {
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;// valentina comentado para centrar con flex
   margin-bottom: 20px;
 
   // Clear floating children

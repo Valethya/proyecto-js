@@ -30,6 +30,18 @@ body{
 .info{
     margin-top: 2em;
 }
-svg{
-    fill: $primary-color;
+
+.hover-p{
+    p{
+      transition: 1s;
+    }
+    &:hover p{
+      color: #000 !important ; 
+      transition: 2s;
+    }
+  }
+.justify-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
