@@ -2084,7 +2084,7 @@ i {
 img.responsive-img,
 video.responsive-video {
   max-width: 100%;
-  height: auto; }
+  height: 100%; }
 
 .pagination li {
   display: inline-block;
@@ -2579,10 +2579,6 @@ table span.badge {
   .container {
     width: 70%;
     margin-top: 8vh; } }
-
-.col .row {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem; }
 
 .section {
   padding-top: 1rem;
