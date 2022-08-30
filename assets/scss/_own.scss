@@ -1,6 +1,6 @@
 .content_header{
     height: 20vh;
-    background-image: url(/assets/img/citrics.jpg);
+    background-image: url(../img/citrics.jpg);
     background-size: cover;
 }
 .img-mirror{
@@ -17,6 +17,17 @@ img{
     background-color: white;
     margin-top: 3vh;
 }
+@media #{$medium-and-up} {
+    .main {
+        margin-top: 6vh;
+    }
+    }
+@media #{$large-and-up} {
+    .main {
+        margin-top: 8vh;
+    }
+}
+
 
 body{
     background: $secondary-color-light;
