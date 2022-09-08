@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,6 +23,7 @@
   <body>
     <header></header>
     <div class="content_header"></div>
+
     <nav>
       <div class="nav-wrapper">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"
@@ -32,7 +33,17 @@
           <li><a href="sass.html">Sass</a></li>
           <li><a href="badges.html">Components</a></li>
           <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
+          <!-- dropdown trigger -->
+          <li>
+            <a class="dropdown-trigger" href="#" data-target="dropdown-menu">
+              Login<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+        </ul>
+        <!-- dropdown structure-->
+        <ul id="dropdown-menu" class="dropdown-content">
+          <li><a href="login.html">login</a></li>
+          <li><a href="sign.html">sign</a></li>
         </ul>
       </div>
     </nav>
@@ -61,7 +72,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="wrap col s10 offset-s1">
+        <div class="wrap-promise col s10 offset-s1">
           <div class="hover-p col s12 m4">
             <a class="justify-center">
               <img class="col s4 m6 responsive-img" src="assets/svg/diet.svg" />
@@ -91,6 +102,91 @@
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
               </p>
             </a>
+          </div>
+        </div>
+      </div>
+      <div class="row servicios">
+        <h2 class="col s12 center-align">Servicios</h2>
+        <div class="col s10 m4">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="assets/img/planning-meal.jpg"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >planifica tu semana<i class="material-icons right"
+                  >more_vert</i
+                ></span
+              >
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >planificacion semanal<i class="material-icons right"
+                  >close</i
+                ></span
+              >
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s10 m4">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator responsive-img" src="assets/img/yoga.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Sesiones de Yoga<i class="material-icons right"
+                  >more_vert</i
+                ></span
+              >
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >Sesiones de Yoga<i class="material-icons right">close</i></span
+              >
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s10 m4">
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="assets/img/family.jpg"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Nutricion en Familia<i class="material-icons right"
+                  >more_vert</i
+                ></span
+              >
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"
+                >Nutricion en Familia<i class="material-icons right"
+                  >close</i
+                ></span
+              >
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -234,5 +330,6 @@
       </div>
     </footer>
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/usuarios.js"></script>
   </body>
 </html>

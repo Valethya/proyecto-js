@@ -1,3 +1,6 @@
+body{
+    background: $secondary-color-light;
+}
 .content_header{
     height: 20vh;
     background-image: url(../img/citrics.jpg);
@@ -8,10 +11,17 @@
 }
 img{
     object-fit: cover;
-    object-position: center;
+    object-position:center;
+    min-height: 230px;
 } 
-
-
+.justify-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
 
 .main{
     background-color: white;
@@ -28,10 +38,23 @@ img{
     }
 }
 
-
-body{
-    background: $secondary-color-light;
+// estilos index
+.wrap-promise{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
+.servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.arrow{
+    height: 50%;
+}
+
 
 .btn-card{
     position: absolute;
@@ -51,8 +74,28 @@ body{
       transition: 2s;
     }
   }
-.justify-center{
+
+ ///estilos login 
+.bg-login{
+    background: url(../img/citrics.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.cont-login{
+margin-top: 3em;
+margin-bottom: 3em;
+width: 40%;
+padding: 2em;
+.span-pass{
+    font-size: 75%;
+    margin-top: 2em;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    &:hover i{
+        color:$secondary-color-dark;
+    }
+}
+.btn-form{
+    width: 100%;
+}
 }

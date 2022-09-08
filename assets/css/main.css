@@ -2083,8 +2083,7 @@ i {
 
 img.responsive-img,
 video.responsive-video {
-  max-width: 100%;
-  height: 100%; }
+  max-width: 100%; }
 
 .pagination li {
   display: inline-block;
@@ -2241,7 +2240,7 @@ ul.staggered-list li {
     text-align: center; } }
 
 .page-footer {
-  padding-top: 20px;
+  padding-top: 3vh;
   color: #fff;
   background-color: #fafafa; }
   .page-footer .footer-copyright {
@@ -2253,6 +2252,14 @@ ul.staggered-list li {
     padding: 10px 0px;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(51, 51, 51, 0.08); }
+
+@media only screen and (min-width: 601px) {
+  .page-footer {
+    margin-top: 6vh; } }
+
+@media only screen and (min-width: 993px) {
+  .page-footer {
+    margin-top: 8vh; } }
 
 table, th, td {
   border: none; }
@@ -3015,9 +3022,7 @@ nav {
     position: relative;
     height: 100%; }
     nav .nav-wrapper ul {
-      width: 100vw;
-      display: flex;
-      justify-content: space-around; }
+      width: 100vw; }
   @media only screen and (min-width: 993px) {
     nav a.sidenav-trigger {
       display: none; } }
@@ -6387,6 +6392,9 @@ input[type=range]::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 
+body {
+  background: #ffe5de; }
+
 .content_header {
   height: 20vh;
   background-image: url(../img/citrics.jpg);
@@ -6397,7 +6405,16 @@ input[type=range]::-ms-thumb {
 
 img {
   object-fit: cover;
-  object-position: center; }
+  object-position: center;
+  min-height: 230px; }
+
+.justify-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.flex {
+  display: flex; }
 
 .main {
   background-color: white;
@@ -6411,8 +6428,19 @@ img {
   .main {
     margin-top: 8vh; } }
 
-body {
-  background: #ffe5de; }
+.wrap-promise {
+  margin-top: 15vh;
+  margin-bottom: 15vh; }
+
+.servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.arrow {
+  height: 50%; }
 
 .btn-card {
   position: absolute;
@@ -6429,7 +6457,22 @@ body {
   color: #000 !important;
   transition: 2s; }
 
-.justify-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+.bg-login {
+  background: url(../img/citrics.jpg);
+  background-size: cover;
+  background-position: bottom; }
+
+.cont-login {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 40%;
+  padding: 2em; }
+  .cont-login .span-pass {
+    font-size: 75%;
+    margin-top: 2em;
+    display: flex;
+    align-items: center; }
+    .cont-login .span-pass:hover i {
+      color: #ff7145; }
+  .cont-login .btn-form {
+    width: 100%; }
